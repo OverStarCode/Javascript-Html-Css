@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Food Filter</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Food Filter</h1>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search for food...">
+
+            <select id="cuisineSelect">
+                <option value="">All Cuisines</option>
+                <option value="American">American</option>
+                <option value="Mexican">Mexican</option>
+                <option value="Italian">Italian</option>
+                <option value="Chinese">Chinese</option>
+            </select>
+
+
+
+
+
+        </div>
+
+        <div class="controls" id="controls">
+            <button id="all" class="active" data-get="all">All</button>
+            <button id="breakfast" data-get="breakfast">Breakfast</button>
+            <button id="lunch" data-get="lunch">Lunch</button>
+            <button id="dinner" data-get="dinner">Dinner</button>
+            <button id="dessert" data-get="dessert">Dessert</button>
+        </div>
+
+        <div class="food-list" id="food-list">
+            <!-- Food items will be dynamically generated here -->
+
+               <!-- itme example -->
+
+               <div class="food-item" data-type="American" data-price="5">
+                <img src="./images/1.jpg" alt="">
+                 <div class="block">
+                    <h3 class="title">American Pizza</h3>
+                    <div class="price">$5</div>
+                 </div>
+                <p class="text">A classic American pizza</p>
+    
+              
+            </div>
+               <!-- itme example -->
+
+               <div class="food-item" data-type="American" data-price="5">
+                <img src="./images/1.jpg" alt="">
+                 <div class="block">
+                    <h3 class="title">American Pizza</h3>
+                    <div class="price">$5</div>
+                 </div>
+                <p class="text">A classic American pizza</p>
+    
+              
+            </div>
+               <!-- itme example -->
+
+               <div class="food-item" data-type="American" data-price="5">
+                <img src="./images/1.jpg" alt="">
+                 <div class="block">
+                    <h3 class="title">American Pizza</h3>
+                    <div class="price">$5</div>
+                 </div>
+                <p class="text">A classic American pizza</p>
+    
+              
+            </div>
+    
+        </div>
+    </div>
+
+    
+    <script src="./index.js"></script>
+</body>
+</html>

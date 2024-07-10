@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+      <form id="weatherForm" class="weatherForm">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Enter city name"
+          required
+        />
+        <button type="submit" class="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <img src="./images/clouds.png" alt="no image" />
+
+      <div class="city">new your city</div>
+
+      <div class="tem">22 C</div>
+
+      <h2 class="weatherDetails">Weather Details</h2>
+
+      <div class="row">
+        <div class="block">
+          <img src="./images/humidity.png" alt="" />
+          <div>
+            <span id="humidity" style="color: rgb(255, 0, 0);">32-</span>
+            <h2>humidity</h2>
+          </div>
+        </div>
+
+        <div class="block">
+          <img src="./images/wind.png" alt="" />
+          <div>
+            <span id="wind" style="color: rgb(248, 0, 0);">100</span>
+            <h2>Wind spead</h2>
+          </div>
+        </div>
+      </div>
+
+      <div id="errorContainer" class="errorContainer">here will be the error</div>
+      <!-- <div id="loadingContainer">
+        <img src="loading.gif" alt="Loading..." />
+      </div> -->
+      <div id="footer">
+        <p>&copy; 2024 Weather App</p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/fontawesome.min.js"
+      integrity="sha512-1M9vud0lqoXACA9QaA8IY8k1VR2dMJ2Qmqzt9pN2AH7eQHWpNsxBpaayV0kKkUsF7FLVQ2sA2SSc8w5VOm7/mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

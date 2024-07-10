@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Memory game</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Memory Game</h1>
+        
+        <div class="game-board">
+            <!-- Game board will be dynamically generated here -->
+            <div class="card" data-value="image1.jpg">😂</div>
+             <div class="card" data-value="image1.jpg">😂</div>
+             <div class="card" data-value="image1.jpg">😂</div>
+             <div class="card" data-value="image1.jpg">😂</div>
+           
+         <div class="card" data-value="image1.jpg">😂</div>
+         <div class="card" data-value="image1.jpg">😂</div>
+         <div class="card" data-value="image1.jpg">😂</div>
+         <div class="card" data-value="image1.jpg">😂</div>
+       
+         <div class="card" data-value="image1.jpg">😂</div>
+         <div class="card" data-value="image1.jpg">😂</div>
+         <div class="card" data-value="image1.jpg">😂</div>
+         <div class="card" data-value="image1.jpg">😂</div>
+       
+         <div class="card" data-value="image1.jpg">😂</div>
+         <div class="card" data-value="image1.jpg">😂</div>
+         <div class="card" data-value="image1.jpg">😂</div>
+         <div class="card open" data-value="image1.jpg">😂</div>
+       
+        </div>
+
+        <div class="controls">
+            <button id="start-button">Start</button>
+            <p id="score">Score: <span>0</span></p>
+            <p id="timer">Time:  <span>0</span></p>
+        </div>
+     <button class="reset">reset</button>
+        <!-- <div class="modal-container">
+            <div class="modal">
+                <h2>Congratulations!</h2>
+                <p>Your final score is <span id="final-score"></span>.</p>
+                <button id="play-again-button">Play Again</button>
+            </div>
+        </div> -->
+
+        <div class="instructions-container">
+            <h2>Instructions</h2>
+            <p>Match pairs of images by clicking on them. Try to find all pairs within the given time limit.</p>
+        </div>
+
+     
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>form Validation</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Form Validation</h1>
+
+      <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="name" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          placeholder="email"
+          id="email"
+          name="email"
+          required
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          placeholder="password"
+          id="password"
+          name="password"
+          required
+        />
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input
+          type="password"
+          placeholder="Confirm password"
+          id="confirmPassword"
+          name="confirmPassword"
+          required
+        />
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="">Select a country</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+          <option value="Canada">Canada</option>
+          <option value="Australia">Australia</option>
+        </select>
+
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          placeholder="Your age"
+          name="age"
+          min="18"
+          max="99"
+          required
+        />
+        <label for="gender">Gender:</label>
+
+        <div class="gender-block">
+          <div class="block">
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+          </div>
+
+          <div class="block">
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </div>
+        </div>
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+
+      <p id="error-message" class="error-message">
+        Error messages will appear here. Please check the form and try again.
+      </p>
+    </div>
+
+    <link rel="stylesheet" href="./index.js" />
+  </body>
+</html>

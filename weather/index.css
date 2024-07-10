@@ -1,0 +1,121 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: #4C3BCF;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.container{
+    background-color: #4B70F5;
+    width: 400px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    padding-bottom: 30px;
+}
+.container h1{
+    padding: 10px;
+}
+.container .weatherForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 97%;
+    margin: 10px;
+}
+.container .weatherForm input{
+    flex: 1;
+    outline: none;
+    padding: 7px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.container .weatherForm button[type='submit']{
+    outline: none;
+    padding: 8px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4C3BCF;
+    color: white;
+    cursor: pointer;
+}
+
+.container .weatherForm button[type='submit']:hover{
+    background-color: #4c3bcf78;
+    color: white;
+}
+.container >img {
+    width: 100px;
+    height: 100px;
+}
+.city ,.tem{
+    font-size: 20px;
+    font-weight: bold;
+}
+.weatherDetails{
+    color: orange;
+    text-decoration: underline;
+}
+.container .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    width: 99%;
+    margin: 5px;
+    padding: 5px;
+}
+.container .block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 97%;
+    margin: 10px;
+}
+.container .block img{
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+.container .block h2{
+  font-size: 15px;
+  font-weight: 100;
+  padding: 10px;
+}
+.container .block span{
+  font-size: 19px;
+  font-weight    : bold;
+}
+.errorContainer{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(63, 23, 173, 0.5);
+    width: 90%;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}

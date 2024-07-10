@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: #4C3BCF;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #4B70F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.container h1{
+    padding: 10px;
+    padding-bottom: 1px;
+}
+.container .quiz-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 97%;
+    margin: 10px;
+    margin-top: 0px;
+}
+.container .quiz-question{
+   
+    width: 97%;
+   
+    padding: 10px;
+    padding-bottom: 2px;
+    font-size: 20px;
+    font-weight: bolder;
+    
+}
+.container .quiz-options{
+    display: flex;
+    justify-self: center;
+    align-items: left;
+    gap: 5px;
+    width: 97%;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 2px;
+    user-select: none ;
+    flex-direction: column;
+}
+.container .quiz-options .block{
+    font-size: 20px;cursor: pointer;
+    background-color: #4C3BCF;
+    border-radius: 4px;
+    padding: 6px;
+}
+.container .quiz-options .block.correct{
+    background-color: green ;
+   
+}
+.container .quiz-options .block.wrong
+{
+    background-color: red ;
+   
+}
+.container .quiz-options .block input{
+    cursor: pointer !important;
+}
+.quiz-score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #4C3BCF;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+.question-time{
+    font-size: 20px;
+}
+.container .quiz-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.container .quiz-footer button{
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    flex: 1;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out linear; 
+
+
+}
+
+.container .quiz-footer button:hover{
+    background-color: #4C3BCF;
+    color: white;
+   transform: translateY(-3px);
+}

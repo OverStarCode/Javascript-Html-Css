@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: #4C3BCF;
+    color: white;
+    height: fit-content;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container {
+    background-color: #4B70F5;
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+    padding: 10px;
+    margin: 10px;
+}
+.container .game-board{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+   
+}
+
+.container .game-board .card{
+    background-color: white;
+    text-align: center;
+    user-select: none;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 20px 5px;
+}
+
+
+
+.container .game-board .card.open{
+    background-color: #3d8e51;
+    color: white;
+}
+.container .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    user-select: none;
+}
+.controls >button , .reset{
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+.controls >button {
+    background-color: green;
+
+}
+.reset{
+    background-color: red;
+    padding: 10px 30px;
+
+}
+
+.controls >button:hover{
+    background-color: #3d8e51;
+    color: white;
+    transform: translateY(-3px);
+}
+.reset:hover{
+    background-color: rgba(255, 0, 0, 0.58);
+    color: white;
+    transform: translateY(-3px);
+
+}
+.controls p {
+    font-size: 20px;
+
+    padding: 3px;
+
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+.controls p span{
+    font-weight: bold;
+    font-size: 24px;
+    color: orange;
+}
+
+.instructions-container {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    padding: 10px;  text-align: center;
+    
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.instructions-container h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+
+
+
+}
+.instructions-container p{
+    text-align: center;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.game-board .card{
+    perspective: 1000px;
+}
+.game-board .card:hover{
+    background-color: red;
+    transform: rotateY(180deg);
+}

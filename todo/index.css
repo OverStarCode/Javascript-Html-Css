@@ -1,0 +1,188 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #478CCF;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.todo-container{
+    background-color: #4535C1;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: auto;
+
+}
+.todo-container h1{
+    font-size: 23px;
+    margin: 20px;
+}
+.todo-container .input-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(63, 23, 173, 0.5);
+    border: #4535C1 solid 1px;
+    width: 90%;
+    gap: 10px;
+}
+.todo-container .input-container input{
+    flex : 1;
+    border:none;
+    outline: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+.todo-container .input-container button#add-task{
+   
+    border:none;
+    outline: none;
+    font-size: 20px;
+    padding :10px;
+    cursor: pointer;
+    border-radius: 10px;
+    user-select: none;
+    color: white;
+    background-color: green;
+}
+
+.todo-container .input-container button{
+   
+    border:none;
+    outline: none;
+    font-size: 20px;
+    padding :10px;
+    background-color: transparent;
+    border-radius: 10px;
+    user-select: none;
+}
+.todo-container .input-container button i{
+    color: white;
+    font-size: 20px;
+}
+.todo-container .input-container button#add-task:hover{
+  opacity: .8;
+  transform: translateY(-3px);
+}
+
+.todo-list-controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 5px;
+}
+.todo-list-controls .block{
+    flex: 1;
+}
+
+.todo-list-controls button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    padding :5px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+    color: white;
+    background-color: #478CCF;
+    transition: all   linear 0.9s ease-in-out; 
+}
+
+.todo-list-controls button.active{
+    background-color: #36C2CE;
+    color: white;
+    transform: translateY(-3px);
+}
+.todo-list-controls button:hover{
+    background-color: #36C2CE;
+    color: white;
+    transform: translateY(-3px);
+}
+.todo-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    width: 93%;
+    color: white !important;
+    font-size: 20px;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.todo-list li{
+    padding: 5px;
+    margin: 1px auto;
+    border-radius: 5px;
+    user-select: none;
+    background-color: white;
+    color: black;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(63, 23, 173, 0.5);
+    display: flex;
+
+}
+
+.todo-list li:hover{
+    box-shadow: 0px 0px 10px rgba(63, 23, 173, 0.5);
+    transform: translateY(-3px);
+    background-color: #eee;
+}
+
+.todo-list label{
+    flex: 1;
+    padding: 5px;
+    margin-left: 5px;
+}
+.todo-list label span{
+    font-size: 15px;
+    opacity: .8;
+   margin-left: 8px;
+}
+.todo-list li button{
+    
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    padding :5px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    user-select: none;
+  
+    transition: all   linear 0.9s ease-in-out; 
+    margin-right: 10px;
+
+}
+
+.todo-list li button.edit{
+    color: green;
+}
+
+.todo-list li button.delete{
+    color: red;
+}
+.todo-list li button:hover{
+   opacity: .7;
+    transform: translateY(-3px);
+}
