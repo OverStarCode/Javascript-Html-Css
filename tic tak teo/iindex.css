@@ -1,0 +1,92 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: #200E3A;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px auto;
+    gap: 14px;
+
+
+}
+.container{
+    width: 500px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#7752FE;
+    padding: 20px;
+    color: white ;
+    border-radius: 10px;
+}
+.container h1{
+    padding: 10px ;
+}
+.player-turn{
+    padding-bottom: 20px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+.container .board{
+   
+  
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+}
+
+.container .board .cell{
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    display: flex;
+    color: bold;
+    font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    background-color:#344CB7;
+
+}
+
+.container .board .cell:hover{
+    background-color:#CD1818;
+}
+
+.container .reset-button{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #CD1818;
+    color: white;
+    font-size: 23px;
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    width: 280px;
+}
+
+.container .reset-button:hover{
+    background-color: #cd18188a;
+}
+
+.container .result{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
