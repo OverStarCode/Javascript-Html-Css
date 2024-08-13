@@ -5,11 +5,10 @@
     font-family: 'Courier New', Courier, monospace;
 }
 body{
-    background-color: #4C3BCF;
     color: white;
     height: fit-content;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,13 +20,13 @@ body{
     align-items: center;
     justify-content: center;
     gap: 2px;
-    max-width: 250px;
+    max-width: 360px;
     color: white !important;
     font-size: 20px;
     margin: 10px auto;
     background-color: #3FA2F6;
     border-radius: 10px;
-    padding: 10px;
+    padding: 30px;
 }
 .calculator-container h1{
     font-size: 18px;

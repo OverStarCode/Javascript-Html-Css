@@ -1,0 +1,89 @@
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+body {
+     font-family: Arial, sans-serif;
+     background-color: #f2f2f2;
+     color: #333;
+     margin:auto;
+     display: flex;
+     justify-content: center;
+   padding: 30px;
+   text-align: center;
+     margin-top: 10px;
+
+ 
+ 
+}
+.container {
+     max-width: 400px;
+     width: 100%;
+     background-color: white;
+     border-radius: 10px;
+     padding: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 10px;
+     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+
+}
+
+.container .title h1{
+     text-align: center;
+     font-size: 30px;
+     padding: 10px;
+}
+.container .input-group{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+     padding: 10px;
+}
+
+.container .input-group input#date{
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.container .input-group button{
+     padding: 10px 20px;
+     min-width: 150px;
+     font-size: 17px;
+     border-radius: 10px;
+     background-color: #4a08ff;
+     color: white;
+     border: none;
+     cursor: pointer;
+}
+
+.container .input-group button:hover{
+     background-color: #3a04d9;
+}
+
+.container .result-group{
+     display: flex;
+     justify-content: center;
+     width: 100%;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+     padding: 10px;
+}
+
+.result span{
+     font-weight: bold;
+     margin-bottom: 10px;
+     font-size: 30px;
+}

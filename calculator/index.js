@@ -2,24 +2,9 @@ var CalculatorInput = document.querySelector("#equation");
 
 var Allbuttons = document.querySelectorAll(".calculator-buttons button")
 
-// var numberOne = document.getElementById("1")
-// var numberTwo= document.getElementById("2")
-// var numberThree = document.getElementById("3")
-// var numberFour= document.getElementById("4")
-// var numberFive= document.getElementById("5")
-// var numberSix = document.getElementById("6")
-// var numberSeven = document.getElementById("7")
-// var numberEight = document.getElementById("8")
-// var numberNine= document.getElementById("9")
-// var numberZero = document.getElementById("0")
-// var numberDoubleZero = document.getElementById("00")
-
-
 
 CalculatorInput.addEventListener("keydown", function(e) {
    
-    // Allow only numbers, backspace, and decimal point
-
     if (
       (e.key >= "0" && e.key <= "9") ||
       e.key === "." ||
@@ -82,6 +67,9 @@ Allbuttons.forEach(function(ee){
                 CalculatorInput.value = result;
             } catch (error) {
                 CalculatorInput.value = "Error";
+                setTimeout(function(){
+                    CalculatorInput.value = "";
+                })
             }
         }else{
             CalculatorInput.value += e.target.textContent;
